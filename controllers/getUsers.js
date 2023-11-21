@@ -21,3 +21,7 @@ export const getUsers = async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 };
+
+export const createUser = (req, res) => {
+  res.send("create user route");
+};
