@@ -25,3 +25,5 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.Model("user", userSchema);
 
 export default User;
+
+// this schema will be used for user
