@@ -26,10 +26,10 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
 
-  date: Date.now,
+  timestamp: Date,
 });
 
-const User = mongoose.Model("users", userSchema);
+const User = mongoose.model("users", userSchema);
 
 export default User;
 
