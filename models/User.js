@@ -19,10 +19,17 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  dob: {
+    type: Date,
+  },
+  gender: {
+    type: String,
+  },
+
   date: Date.now,
 });
 
-const User = mongoose.Model("user", userSchema);
+const User = mongoose.Model("users", userSchema);
 
 export default User;
 
